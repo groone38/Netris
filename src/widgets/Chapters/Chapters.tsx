@@ -1,6 +1,6 @@
 import React, { memo } from "react";
-import { useAppSelector } from "./store/store";
-import { getTimeState } from "./entities/model/Video/selectors/getTimeState";
+import { useAppSelector } from "../../store/store";
+import { getTimeState } from "../../entities/model/Time/selectors/getTimeState";
 
 interface ITimLapsPorps {
   jumpChapters: (time: number) => void;
@@ -10,7 +10,7 @@ const Chapters = memo(({ jumpChapters }: ITimLapsPorps) => {
   const { time, isLoading } = useAppSelector(getTimeState);
   return (
     <div className="timeLaps">
-      {isLoading && <h1>Loadins...</h1>}
+      {isLoading && <h1>Loading...</h1>}
       {time.map((item) => (
         <p
           className="time"

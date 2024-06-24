@@ -17,14 +17,8 @@
 
 .block {
   position: absolute;
-  /* width: 5px;
-  height: 10px; */
   background-color: green;
-  /* bottom: 20px;
-  /* left: 16px; */
-  /* left: 1.29%;  */
   z-index: 10;
-  /* opacity: 0.5; */
 }
 
 .timeLaps {
@@ -38,10 +32,6 @@
 .time {
   padding: 10px 0;
 }
-
-/* .time:first-child {
-  margin-top: 10px;
-} */
 
 .time:hover {
   background-color: lightgray;

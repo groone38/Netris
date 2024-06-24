@@ -23,11 +23,3 @@ export interface ITimLapsResponce {
 export interface ITimLaps extends ITimLapsResponce {
   timestampVue: string;
 }
-
-export type TimeMaps = {
-  [key: number]: {
-    duration: number;
-    timestamp: number;
-    zone: Zone;
-  };
-};
